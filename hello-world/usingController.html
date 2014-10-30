@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="ABC">
+
+<head>
+    <title>Controller example</title>
+</head>
+
+<body ng-controller="FirstCtrl">
+    {{message}}
+
+    <div class="example2" ng-controller="ExampleController">
+        Name:
+        <input ng-model="name" type="text" />
+        <button ng-click="greet()">Greet</button>
+        <button ng-click="window.alert('Should not see me')">Won't greet</button>
+    </div>
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.5/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="ctrl1.js"></script>
+</body>
+
+</html>
